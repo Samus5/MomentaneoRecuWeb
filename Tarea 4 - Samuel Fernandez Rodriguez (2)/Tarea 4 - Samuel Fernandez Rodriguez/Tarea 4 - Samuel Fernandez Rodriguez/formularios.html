@@ -1,0 +1,18 @@
+<form>
+    <input type="text" id="fname" name="fname" placeholder="Nombre" minlength="3" maxlength="40" pattern="[A-Z]*[a-z]+" required>
+    <input type="text" id="lname" name="lname" placeholder="Apellidos"minlength="5" maxlength="60"pattern="[\p{L} '-]+(\s[\p{L} '-]+)*" required>
+    <input type="text" name="Correo electrónico" id="email" placeholder="Correo electrónico" type="text" pattern="[a-z0-9_$%?¿]+@([a-z])+\.[a-z]{2,4}" required/>
+    <input type="text" id="fname" name="genero" placeholder="Genero" list="generos" required>             
+    <input type="text" id="edades" name="edad" placeholder="Edad" minlength="1" maxlength="2" min="9" max="100"  pattern="([5-9]|[1-9][0-9])" required>              
+
+  <datalist id="Actor Favorito">
+  <option value="Christian Bale"></option>
+  <option value="Robert Pattinson"></option>
+  <option value="Ben Affleck"></option>
+  <option value="Prefiero no contestar"></option>
+  </datalist id ="generos">
+  <label for="cbox1" class="custom-checkbox-label">
+  <input type="checkbox" id="cbox1" value="first_checkbox" /> Acepta el Aviso Legal y La Política de Privacidad
+  </label>
+
+    </form>

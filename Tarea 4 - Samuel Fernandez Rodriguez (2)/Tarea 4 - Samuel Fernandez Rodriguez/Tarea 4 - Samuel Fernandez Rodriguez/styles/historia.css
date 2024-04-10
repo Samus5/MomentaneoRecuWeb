@@ -1,0 +1,69 @@
+/* Estilos base */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/historiaFondo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.papas {
+  width: 200px; /* Ajusta el tamaño de la nueva imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+  margin-left: auto; /* Alinea la imagen a la izquierda en dispositivos de escritorio */
+  margin-right: auto; /* Alinea la imagen a la derecha en dispositivos de escritorio */
+  margin-top: auto; /* Centra verticalmente la imagen */
+  margin-bottom: auto; /* Centra verticalmente la imagen */
+}
+
+.titulo {
+  font-size: 60px;
+  color: #dbd809;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* Ajusta estos valores para una sombra más pronunciada */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 20px; /* Añade un espacio alrededor del título */
+  text-align: center; /* Centra el texto */
+}
+
+nav {
+  margin: 20px auto; /* Añade un espacio alrededor del menú y lo centra horizontalmente */
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: center; /* Centra los elementos del menú */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #dbd809;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}
+
+nav ul li:hover {
+  background: #070202;
+  transition: transform 0.5s ease;
+  transform: scale(0.75);
+}
+
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 768px) {
+  .papas {
+      width: 100%; /* La imagen ocupa todo el ancho en dispositivos móviles */
+      margin: auto; /* Centra la imagen horizontalmente */
+  }
+}
